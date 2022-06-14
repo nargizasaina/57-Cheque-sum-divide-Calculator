@@ -1,0 +1,7 @@
+.ShowCheque{
+    border: 1px solid lightsteelblue;
+    border-radius: 2px;
+    max-width: 350px;
+    padding: 10px;
+    margin: 0 auto;
+}
