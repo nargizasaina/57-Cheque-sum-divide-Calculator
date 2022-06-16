@@ -1,0 +1,48 @@
+.InputWrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.InputName{
+    width: 150px;
+    height: 20px;
+    margin-right: 20px;
+}
+
+.InputAmount{
+    width: 70px;
+    height: 20px;
+}
+
+.RemoveBtn{
+    border-color: orangered;
+    color: orangered;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: 700;
+}
+
+.RemoveBtn:hover{
+    border-color: purple;
+}
+
+.RemoveBtn:active{
+    color: purple;
+}
+
+.AddBtn{
+    border-color: dodgerblue;
+    color: dodgerblue;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: 700;
+}
+
+.AddBtn:hover{
+    border-color: forestgreen;
+}
+
+.AddBtn:active{
+    color: forestgreen;
+}

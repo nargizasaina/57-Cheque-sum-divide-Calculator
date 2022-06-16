@@ -13,7 +13,8 @@ code {
 }
 
 .Container {
-  max-width: 1200px;
-  padding: 0 16px;
+  max-width: 500px;
+  padding: 16px;
   margin: 0 auto;
+  border: 3px dashed gray;
 }

@@ -40,6 +40,7 @@ const EqualBuilder = () => {
     if (showCheque) {
         calcResults =
             <ShowCheque
+                key={cheque.sum}
                 people={cheque.people}
                 total={total}
                 amount={Math.ceil(total/cheque.people)}

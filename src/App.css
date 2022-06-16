@@ -1,0 +1,7 @@
+.RadioInputs{
+    max-width: 250px;
+    margin: 20px auto;
+    border: 1px dashed darkorange;
+    border-radius: 5px;
+    padding: 20px;
+}
