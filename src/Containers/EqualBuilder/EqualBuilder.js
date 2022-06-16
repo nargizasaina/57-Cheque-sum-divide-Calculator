@@ -22,7 +22,6 @@ const EqualBuilder = () => {
             ...prev,
             [type]: value,
         }));
-        console.log(cheque);
 
         if (cheque.people !== 0 && cheque.sum !== 0) {
             setDisabled(false);
@@ -30,7 +29,6 @@ const EqualBuilder = () => {
     };
 
     const equalCalculate = () => {
-        console.log(cheque.sum);
         setTotal(parseInt(cheque.sum) + (parseInt(cheque.sum) / 100 * parseInt(cheque.percentage)) + parseInt(cheque.delivery));
         setShowCheque(true);
     };

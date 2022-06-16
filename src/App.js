@@ -16,6 +16,7 @@ const App = () => {
                 <p>How to calculate order sum?</p>
                 <form>
                     <input
+                        key="choice1"
                         type={"radio"}
                         name="pay-choice"
                         value="equal"
@@ -25,6 +26,7 @@ const App = () => {
                     />
                     <label htmlFor="choice1"> Divide equally to all </label><br/>
                     <input
+                        key="choice2"
                         type={"radio"}
                         name="pay-choice"
                         value="individual"

@@ -10,6 +10,10 @@
     font-weight: 700;
 }
 
+.CalcBtn:disabled{
+    cursor: not-allowed;
+}
+
 .CalcBtn:hover{
     background: limegreen;
 }

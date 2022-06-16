@@ -24,12 +24,9 @@ const IndividualBuilder = () => {
             {userName: '', amount: '', id: nanoid(), amountEach: ''}
         ]));
 
-        if (people.length !== 0) {
-            setDisabled(false);
-        }
     };
-
     const onChange = (name, value, id) => {
+
         setPeople(() => {
             return people.map(person => {
                 if (person.id === id) {
@@ -41,7 +38,9 @@ const IndividualBuilder = () => {
                 return person;
             });
         });
-        console.log(people);
+        if (people.length !== 0) {
+            setDisabled(false);
+        }
     };
 
     const onDelete = (id) => {
@@ -91,7 +90,7 @@ const IndividualBuilder = () => {
             <ShowIndivCheque
                 people={people}
                 total={total}
-            />
+            />;
     }
 
     return (
