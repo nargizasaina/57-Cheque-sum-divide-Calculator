@@ -1,7 +1,7 @@
 import React from 'react';
-import './ShowCheque.css';
+import './ShowEqualCheque.css';
 
-const ShowCheque = (props) => {
+const ShowEqualCheque = (props) => {
     return (
         <>
             <p>Total sum: {props.total} KGS</p>
@@ -11,4 +11,4 @@ const ShowCheque = (props) => {
     );
 };
 
-export default ShowCheque;
+export default ShowEqualCheque;

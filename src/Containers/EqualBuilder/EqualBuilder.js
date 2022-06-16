@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
-import Inputs from "../../Components/EqualCalc/Inputs/Inputs";
+import Inputs from "../../Components/EqualCalc/EqualInputs/Inputs";
 import EqualCalc from "../../Components/EqualCalc/EqualCalc";
-import ShowCheque from "../../Components/EqualCalc/ShowCheque";
+import ShowEqualCheque from "../../Components/EqualCalc/ShowEqualCheque";
 
 const EqualBuilder = () => {
     const [cheque, setCheque] = useState({
@@ -29,7 +29,7 @@ const EqualBuilder = () => {
         }
     };
 
-    const calculate = () => {
+    const equalCalculate = () => {
         console.log(cheque.sum);
         setTotal(parseInt(cheque.sum) + (parseInt(cheque.sum) / 100 * parseInt(cheque.percentage)) + parseInt(cheque.delivery));
         setShowCheque(true);
@@ -39,8 +39,7 @@ const EqualBuilder = () => {
 
     if (showCheque) {
         calcResults =
-            <ShowCheque
-                key={cheque.sum}
+            <ShowEqualCheque
                 people={cheque.people}
                 total={total}
                 amount={Math.ceil(total/cheque.people)}
@@ -54,7 +53,7 @@ const EqualBuilder = () => {
                 onChange={changeInputs}
             />
             <EqualCalc
-                calculate={calculate}
+                calculate={equalCalculate}
                 disabled={disabled}
             />
             <div className="ShowCheque">

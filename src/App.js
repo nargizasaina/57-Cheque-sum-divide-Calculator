@@ -6,15 +6,6 @@ import './App.css';
 const App = () => {
     const [formData, setFormData] = useState("equal");
 
-    // const onChange = e => {
-    //     const value = e.target.value;
-    //     if (value === "equal") {
-    //         setFormData([<EqualBuilder/>]);
-    //     } else {
-    //         setFormData([<IndividualBuilder/>]);
-    //     }
-    // };
-
     const onChange = value => {
         setFormData(value);
     };
